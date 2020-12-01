@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\bin\Debug\Assigenment-one.exe.config
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\bin\Debug\Assigenment-one.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\bin\Debug\Assigenment-one.pdb
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\obj\Debug\Assigenment-one.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\obj\Debug\Assigenment-one.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\obj\Debug\Assigenment-one.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day2\Assigenment-one\obj\Debug\Assigenment-one.pdb

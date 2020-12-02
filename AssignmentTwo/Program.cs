@@ -10,15 +10,19 @@ namespace AssignmentTwo
     {
         static void Main(string[] args)
         {
-            Employee e1 = new Manager("pravin",10,15000,"manager");
-            Employee e2 = new Manager();
-            Employee e3 = new Manager();
+            Employee e1 = new Manager(basic:10);
+            Employee e2 = new GeneralManager("cdac", "tushar", 11, 50000, "General Manager");
+            Employee e3 = new CEO("kishor", basic:60000);
 
-            Console.WriteLine(e1.EmpNo);
-            Console.WriteLine(e2.EmpNo);
-            Console.WriteLine(e3.EmpNo);
-            decimal d= e1.calcNetSalary();
-            Console.WriteLine(d);
+            //Console.WriteLine(e1.EmpNo+"  "+ e1.calcNetSalary()+"  "+e1.DeptNo + "  "+e1.Name);
+            //Console.WriteLine(e2.EmpNo+"  "+e2.calcNetSalary()+"  "+e2.DeptNo+"  "+e2.Name);
+            //Console.WriteLine(e3.EmpNo+"  "+e3.calcNetSalary()+"  "+e3.DeptNo+"  "+e3.Name);
+
+            e1.Display();
+            Console.WriteLine();
+            e2.Display();
+            Console.WriteLine();
+            e3.Display();
 
             Console.WriteLine();
 
@@ -41,7 +45,7 @@ namespace AssignmentTwo
                 if (value != "null")
                     name = value;
                 else
-                    Console.WriteLine("invalid name");
+                    name = "nothing";
             }
             get
             {
@@ -66,7 +70,7 @@ namespace AssignmentTwo
                 if (value > 0)
                     deptNo = value;
                 else
-                    Console.WriteLine("invalid department number");
+                    deptNo = 1;
             }
             get
             {
@@ -95,9 +99,21 @@ namespace AssignmentTwo
             Basic = basic;
         }
 
+        public virtual void Display()
+        {
+            Console.Write(" Emp No :: "+EmpNo+" , Name ::  " + Name + " , Net Basic  ::  " + calcNetSalary() +" , Dept No :: "+DeptNo);
+        }
     }
 
-    public class Manager : Employee
+    public interface IDbFunctions
+    {
+        void insert();
+        void update();
+        void delete();
+        
+    }
+
+    public class Manager : Employee, IDbFunctions
     {
         private string designation;
         public string Designation
@@ -106,6 +122,8 @@ namespace AssignmentTwo
             {
                 if (value != "null")
                     designation=value;
+                else
+                    designation = "Employee";
             }
             get
             {
@@ -117,7 +135,13 @@ namespace AssignmentTwo
 
             get => base.basic;
 
-            set => base.basic=value;
+            set
+            {
+                if (value >= 5000 && value <= 70000)
+                    base.basic = value;
+                else
+                    base.basic = 15000;
+            }
         }
 
         public Manager(string name="null",short deptNo=0,decimal basic=0,string designation="null") : base(name, deptNo, basic)
@@ -127,11 +151,32 @@ namespace AssignmentTwo
         }
       public override decimal calcNetSalary()
         {
-            return Basic*100;
+            return Basic*11;
+        }
+
+        public void insert()
+        {
+            Console.WriteLine("inserted");
+        }
+
+        public void update()
+        {
+            Console.WriteLine("updated");
+        }
+
+        public void delete()
+        {
+            Console.WriteLine("deleted");
+        }
+        public override void Display()
+        {
+            base.Display();
+            Console.Write(" , Designation ::  " + Designation);
+         
         }
     }
 
-    public class GeneralManager : Manager
+    public class GeneralManager : Manager, IDbFunctions
     {
         private string perks;
         public string Perks
@@ -151,7 +196,13 @@ namespace AssignmentTwo
 
             get => base.basic;
 
-            set => base.basic = value;
+            set
+            {
+                if (value >= 15000 && value <= 15000)
+                    base.basic = value;
+                else
+                    base.basic = 30000;
+            }
         }
 
         public GeneralManager(string perks="null",string name="null",short deptNo=0,decimal basic=0,string designation="null") :base(name,deptNo,basic, designation)
@@ -161,18 +212,31 @@ namespace AssignmentTwo
 
         public override decimal calcNetSalary()
         {
-            return Basic*100;
+            return Basic*15;
+        }
+
+        public override void Display()
+        {
+            base.Display();
+            Console.Write(" Perks :: "+ Perks);
+           
         }
     }
 
-    public class CEO : Employee
+    public class CEO : Employee, IDbFunctions
     {
         public override decimal Basic
         {
 
             get => base.basic;
 
-            set => base.basic = value;
+            set
+            {
+                if (value >= 150000 && value <= 7000000)
+                     base.basic = value;
+                else
+                    base.basic = 30000;
+            }
         }
 
         public CEO(string name="null",short deptNo=0,decimal basic=0):base(name,deptNo,basic)
@@ -181,7 +245,22 @@ namespace AssignmentTwo
         }
         public sealed override decimal calcNetSalary()
         {
-            return Basic * 1000;
+            return Basic * 25;
+        }
+
+        public void insert()
+        {
+            Console.WriteLine("inserted");
+        }
+
+        public void update()
+        {
+            Console.WriteLine("updated");
+        }
+
+        public void delete()
+        {
+            Console.WriteLine("deleted");
         }
     }
 

@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\bin\Debug\AssignmentTwo.exe.config
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\bin\Debug\AssignmentTwo.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\bin\Debug\AssignmentTwo.pdb
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\obj\Debug\AssignmentTwo.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\obj\Debug\AssignmentTwo.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\obj\Debug\AssignmentTwo.pdb
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day3\AssignmentTwo\obj\Debug\AssignmentTwo.csprojAssemblyReference.cache

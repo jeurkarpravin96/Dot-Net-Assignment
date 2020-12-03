@@ -53,13 +53,17 @@ namespace AssignmentTwo
             }
         }
         //read only
-        protected static int employeeNo=0; 
+        private static int employeeNo=0; 
         private int empNo;
         public int EmpNo
         {
             get
             {
                 return empNo;
+            }
+            private set
+            {
+                empNo = value;
             }
         }
         private short deptNo;
@@ -93,7 +97,7 @@ namespace AssignmentTwo
       public Employee(string name="null",short deptNo=0,decimal basic=0)
         {
             employeeNo++;
-            empNo = employeeNo;
+            EmpNo = employeeNo;
             Name = name;
             DeptNo = deptNo;
             Basic = basic;

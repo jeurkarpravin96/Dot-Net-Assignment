@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\bin\Debug\InheritanceInInterface.exe.config
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\bin\Debug\InheritanceInInterface.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\bin\Debug\InheritanceInInterface.pdb
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\obj\Debug\InheritanceInInterface.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\obj\Debug\InheritanceInInterface.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\obj\Debug\InheritanceInInterface.exe
+C:\Users\Lenovo\Desktop\. Net\Dot Net\Day4\InheritanceInInterface\obj\Debug\InheritanceInInterface.pdb

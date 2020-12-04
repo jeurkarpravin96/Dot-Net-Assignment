@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\bin\Debug\QuestionOne.exe.config
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\bin\Debug\QuestionOne.exe
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\bin\Debug\QuestionOne.pdb
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\obj\Debug\QuestionOne.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\obj\Debug\QuestionOne.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\obj\Debug\QuestionOne.exe
+C:\Users\Lenovo\Desktop\. Net\Dot-Net-Assignment\AssignmentThree\QuestionOne\obj\Debug\QuestionOne.pdb
